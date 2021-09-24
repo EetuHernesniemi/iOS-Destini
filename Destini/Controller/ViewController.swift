@@ -12,10 +12,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var choice1Button: UIButton!
     @IBOutlet weak var choice2Button: UIButton!
     
+    var gameStories : StoryBrain = StoryBrain()
+    
     override func viewDidLoad() {
+        refreshView()
         super.viewDidLoad()
     }
-
+    
+    func refreshView() {
+        storyLabel.text = gameStories.stories[gameStories.currentStoryIndex].description
+    }
 
     @IBAction func choiceMade(_ sender: UIButton) {
     }
