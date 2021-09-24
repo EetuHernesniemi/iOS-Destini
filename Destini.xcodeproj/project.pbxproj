@@ -15,6 +15,8 @@
 		3CAA6CB626FDF0FD00528C1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CAA6CB426FDF0FD00528C1A /* LaunchScreen.storyboard */; };
 		3CAA6CC126FDF0FD00528C1A /* DestiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA6CC026FDF0FD00528C1A /* DestiniTests.swift */; };
 		3CAA6CCC26FDF0FD00528C1A /* DestiniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA6CCB26FDF0FD00528C1A /* DestiniUITests.swift */; };
+		3CAA6CDD26FDF4D300528C1A /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA6CDC26FDF4D300528C1A /* Story.swift */; };
+		3CAA6CDF26FDF4EB00528C1A /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CAA6CDE26FDF4EB00528C1A /* StoryBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3CAA6CC726FDF0FD00528C1A /* DestiniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DestiniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CAA6CCB26FDF0FD00528C1A /* DestiniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestiniUITests.swift; sourceTree = "<group>"; };
 		3CAA6CCD26FDF0FD00528C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CAA6CDC26FDF4D300528C1A /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		3CAA6CDE26FDF4EB00528C1A /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,11 @@
 		3CAA6CA826FDF0F900528C1A /* Destini */ = {
 			isa = PBXGroup;
 			children = (
+				3CAA6CDB26FDF48E00528C1A /* Model */,
+				3CAA6CDA26FDF48400528C1A /* View */,
+				3CAA6CD926FDF47C00528C1A /* Controller */,
 				3CAA6CA926FDF0F900528C1A /* AppDelegate.swift */,
 				3CAA6CAB26FDF0F900528C1A /* SceneDelegate.swift */,
-				3CAA6CAD26FDF0F900528C1A /* ViewController.swift */,
-				3CAA6CAF26FDF0F900528C1A /* Main.storyboard */,
 				3CAA6CB226FDF0FD00528C1A /* Assets.xcassets */,
 				3CAA6CB426FDF0FD00528C1A /* LaunchScreen.storyboard */,
 				3CAA6CB726FDF0FD00528C1A /* Info.plist */,
@@ -126,6 +131,31 @@
 				3CAA6CCD26FDF0FD00528C1A /* Info.plist */,
 			);
 			path = DestiniUITests;
+			sourceTree = "<group>";
+		};
+		3CAA6CD926FDF47C00528C1A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3CAA6CAD26FDF0F900528C1A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3CAA6CDA26FDF48400528C1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CAA6CAF26FDF0F900528C1A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3CAA6CDB26FDF48E00528C1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3CAA6CDC26FDF4D300528C1A /* Story.swift */,
+				3CAA6CDE26FDF4EB00528C1A /* StoryBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CAA6CDF26FDF4EB00528C1A /* StoryBrain.swift in Sources */,
 				3CAA6CAE26FDF0F900528C1A /* ViewController.swift in Sources */,
 				3CAA6CAA26FDF0F900528C1A /* AppDelegate.swift in Sources */,
 				3CAA6CAC26FDF0F900528C1A /* SceneDelegate.swift in Sources */,
+				3CAA6CDD26FDF4D300528C1A /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
