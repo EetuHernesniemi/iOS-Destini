@@ -27,6 +27,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func choiceMade(_ sender: UIButton) {
+        let currentStoryIndex = gameStories.currentStoryIndex
+        let currentStory = gameStories.stories[currentStoryIndex]
+        let choice1GoToIndex: Int = currentStory.userChoice1GoToIndex
+        let choice2GoToIndex: Int = currentStory.userChoice2GoToIndex
+        if sender == choice1Button {
+            gameStories.currentStoryIndex = choice1GoToIndex
+        } else if sender == choice2Button {
+            gameStories.currentStoryIndex = choice2GoToIndex
+        } else {
+            print("Error. Unidentified or invalid choice made by user.")
+            exit(-1)
+        }
+        refreshView()
     }
 }
 
