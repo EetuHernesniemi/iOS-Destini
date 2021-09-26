@@ -20,7 +20,10 @@ class ViewController: UIViewController {
     }
     
     func refreshView() {
-        storyLabel.text = gameStories.stories[gameStories.currentStoryIndex].description
+        let currentStory = gameStories.stories[gameStories.currentStoryIndex]
+        storyLabel.text = currentStory.storyLabel
+        choice1Button.setTitle(currentStory.userChoice1, for: .normal)
+        choice2Button.setTitle(currentStory.userChoice2, for: .normal)
     }
 
     @IBAction func choiceMade(_ sender: UIButton) {
